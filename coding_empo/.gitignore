@@ -1,0 +1,21 @@
+# Large wheel files
+*.whl
+
+# Large log files
+*.log
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.class
+*.so
+
+# Virtual environments
+venv/
+.venv/
+ENV/
+venv
+
+# OS files
+.DS_Store
+wandb

@@ -1,0 +1,18 @@
+edis_top_k=${EDIS_TOP_K:-8}
+oversample_ratio=${OVERSAMPLE_RATIO:-4}
+if ! [[ "${oversample_ratio}" =~ ^[0-9]+$ ]] || [ "${oversample_ratio}" -lt 1 ]; then
+    echo "[Error] OVERSAMPLE_RATIO must be a positive integer, got ${oversample_ratio}." >&2
+    exit 1
+fi
+n_resp_per_prompt=$((edis_top_k * oversample_ratio))
+
+target="${REWARD_TYPE:-entropy}"
+selection_family="${SELECTION_FAMILY:-edis_topk}"
+balanced_selection_method="${BALANCED_SELECTION_METHOD:-A}"
+reward_method="${REWARD_METHOD:-recompute_empo}"
+vote_weighting="${VOTE_WEIGHTING:-off}"
+majority_share="${MAJORITY_SHARE:-0.5}"
+underfilled_policy="${UNDERFILLED_POLICY:-skip_prompt}"
+vote_weight_epsilon="${VOTE_WEIGHT_EPSILON:-0.1}"
+use_wandb="${USE_WANDB:-True}"
+wandb_mode="${WANDB_MODE:-online}"

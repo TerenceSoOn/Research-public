@@ -1,0 +1,25 @@
+{
+  "allocations": {
+    "biology": 6,
+    "business": 7,
+    "chemistry": 9,
+    "computer science": 3,
+    "economics": 7,
+    "engineering": 8,
+    "health": 7,
+    "history": 3,
+    "law": 9,
+    "math": 11,
+    "other": 8,
+    "philosophy": 4,
+    "physics": 11,
+    "psychology": 7
+  },
+  "dataset": "mmlu_pro_eval",
+  "output": "/home/pterence6699/coding_edis_empo/evaluation/subsets/mmlu_pro_eval_seed20260418_n100.parquet",
+  "requested_sample_size": 100,
+  "sample_size": 100,
+  "seed": 20260418,
+  "source": "/home/pterence6699/coding_edis_empo/runtime/math_data/mmlu_pro_eval.parquet",
+  "stratified_by": "extra_info.category"
+}

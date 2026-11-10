@@ -1,0 +1,26 @@
+run_id: eval_20260418_main
+gpu_ids: "0,3"
+fail_fast: false
+groups:
+  - math
+  - nl
+  - coding
+
+math_n: 16
+nl_n: 16
+livecodebench_n: 10
+gsm8k_subset_size: 100
+livecodebench_release: release_v6
+livecodebench_subset_size: 200
+livecodebench_local_dataset_path: /home/pterence6699/coding_edis_empo/evaluation/subsets/livecodebench_code_generation_lite_release_v6_test.parquet
+# Optional smoke controls. Leave null for real evaluation.
+math_row_limit: null
+nl_row_limit: null
+
+checkpoints:
+  - id: D_top790
+    path: /home/pterence6699/coding_edis_empo/outputs/D_M32_K8_methodD_largest4_rest4_rw-binaryReward_adv-entropyHighTokenRatio/checkpoints/top_amc_checkpoints/global_step_790_score_0.568750
+  - id: C_top990
+    path: /home/pterence6699/coding_edis_empo/outputs/C_M32_K8_methodD_largest4_rest4_rw-binaryReward_adv-off/checkpoints/top_amc_checkpoints/global_step_990_score_0.559375
+  - id: B_top540
+    path: /home/pterence6699/coding_edis_empo/outputs/B_M32_K8_randomTopK_rw-binaryReward_adv-off/checkpoints/top_amc_checkpoints/global_step_540_score_0.550000

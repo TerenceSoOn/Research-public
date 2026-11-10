@@ -1,0 +1,8 @@
+Results  (math500, m=8, k=8, N=64, T=0.6, top_p=1.0):
+Method                 Accuracy
+--------------------------------
+Mean                      60.0%
+Maj Vote                  76.0%
+Entropy                   68.0%
+SC                        70.0%
+EDIS                      72.0%

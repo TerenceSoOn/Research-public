@@ -1,0 +1,8 @@
+Results  (amc23_1010, m=8, k=8, N=64, T=0.6, top_p=1.0):
+Method                 Accuracy
+--------------------------------
+Mean                      41.2%
+Maj Vote                  55.0%
+Entropy                   52.5%
+SC                        52.5%
+EDIS                      55.0%

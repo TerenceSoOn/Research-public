@@ -1,0 +1,8 @@
+Results  (aime24, n=8, T=0.6, top_p=1.0):
+Method                 Accuracy
+--------------------------------
+Mean                       7.1%
+Maj Vote                  13.3%
+Entropy                   13.3%
+SC                        13.3%
+EDIS                      13.3%

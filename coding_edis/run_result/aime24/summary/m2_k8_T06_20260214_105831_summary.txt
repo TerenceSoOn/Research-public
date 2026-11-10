@@ -1,0 +1,7 @@
+Results  (aime24_0726, m=2, k=8, N=16, T=0.6, top_p=1.0):
+Metric                 Accuracy
+--------------------------------
+Avg (all N)               10.0%
+Avg_EDIS@8                12.9%
+Best_EDIS@8               16.7%
+Maj_EDIS@8                20.0%

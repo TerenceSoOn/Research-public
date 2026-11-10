@@ -1,0 +1,7 @@
+Results  (math500, m=1, k=8, N=8, T=0.6, top_p=1.0):
+Metric                 Accuracy
+--------------------------------
+Avg (all N)               60.9%
+Avg_EDIS@8                60.9%
+Best_EDIS@8               73.0%
+Maj_EDIS@8                75.0%

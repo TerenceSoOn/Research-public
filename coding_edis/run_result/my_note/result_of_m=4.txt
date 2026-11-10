@@ -1,0 +1,31 @@
+m=4
+
+Processing aime24 (3 files found):
+----------------------------------------
+Metric               Average Accuracy
+----------------------------------------
+Avg (all N)                     6.9%
+Avg_EDIS                       10.1%
+Best_EDIS                      12.2%
+Maj_EDIS                       15.6%
+----------------------------------------
+
+Processing amc23 (3 files found):
+----------------------------------------
+Metric               Average Accuracy
+----------------------------------------
+Avg (all N)                    38.8%
+Avg_EDIS                       47.7%
+Best_EDIS                      45.8%
+Maj_EDIS                       53.3%
+----------------------------------------
+
+Processing math500 (3 files found):
+----------------------------------------
+Metric               Average Accuracy
+----------------------------------------
+Avg (all N)                    57.8%
+Avg_EDIS                       65.8%
+Best_EDIS                      65.0%
+Maj_EDIS                       73.0%
+----------------------------------------

@@ -1,0 +1,33 @@
+# Hydra searchpath is injected by the shell script as an absolute file:// path
+
+defaults:
+  - ppo_trainer
+  - _self_
+
+data:
+  gen_batch_size: ${data.train_batch_size}
+
+reward_model:
+  reward_kwargs:
+    n_samples_per_prompt: ${actor_rollout_ref.rollout.n}
+    n_votes_per_prompt: ${actor_rollout_ref.rollout.n}
+    mode: "train"
+    entropy_thres: 1.0
+    # Active EMPO-binary defaults. The training script overrides these explicitly.
+    selected_top_k: 8
+    oversample_ratio: 1
+    selection_family: random_topk
+    balanced_selection_method: D
+    reward_method: use_binary_reward
+    adv_weight_mode: off  # off | entropy_high_token_ratio
+    entropy_weight_top_fraction: 0.2
+    adv_weight_clip_min: 0.5
+    adv_weight_clip_max: 1.5
+    largest_group_count: null
+    rest_group_count: null
+    underfilled_policy: skip_prompt
+    min_response_length: 0
+
+custom_reward_function:
+  path: null
+  name: compute_score

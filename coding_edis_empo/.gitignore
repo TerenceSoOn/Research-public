@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+
+# Outputs (generated at runtime)
+outputs*/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Missing requirements tracker
+requirements.missing.txt
+
+wandb/
+
+# Shared runtime assets (copied with scp, not Git)
+runtime/*
+!runtime/.gitignore
+!runtime/README.md
+
+# Offline evaluation runtime artifacts
+eval_runs/
+external/
+.venv_lcb/
+evaluation/subsets/livecodebench_code_generation_lite_*.parquet
+evaluation/subsets/livecodebench_code_generation_lite_*.jsonl
+evaluation/subsets/livecodebench_code_generation_lite_*.json
+
+checkpoints/
+
+scripts/logs
+
+.venv

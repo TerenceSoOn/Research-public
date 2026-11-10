@@ -1,0 +1,13 @@
+- reward_model.reward_manager=ttrl
+- ++reward_model.reward_kwargs.n_samples_per_prompt=7
+- ++reward_model.reward_kwargs.n_votes_per_prompt=7
+- ++reward_model.reward_kwargs.mode=train
+- ++reward_model.reward_kwargs.reward_type=semantic_entropy
+- ++reward_model.reward_kwargs.entropy_thres=1.0
+- data.train_files=[/data/coding/EMPO-main/verl/data/NM_20K.parquet]
+- data.val_files=[/data/coding/EMPO-main/verl/data/amc.parquet]
+- data.max_prompt_length=512
+- data.max_response_length=2048
+- data.train_batch_size=16
+- data.filter_overlong_prompts=True
+- data.truncation=error

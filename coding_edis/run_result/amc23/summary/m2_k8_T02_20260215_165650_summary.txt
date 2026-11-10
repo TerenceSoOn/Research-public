@@ -1,0 +1,7 @@
+Results  (amc23_1010, m=2, k=8, N=16, T=0.2, top_p=1.0):
+Metric                 Accuracy
+--------------------------------
+Avg (all N)               49.7%
+Avg_EDIS@8                53.4%
+Best_EDIS@8               40.0%
+Maj_EDIS@8                57.5%
